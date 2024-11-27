@@ -59,21 +59,21 @@ Step 5: Open your browser and navigate to:
 http://localhost:3000
 ```
 
-## Screenshots
+# Screenshots
 ## Dashboard
 ![alt text](image.png)
 
 ## Manage Users
 ![alt text](image-1.png)
 
-## Profile
+# Profile
 ![alt text](image-2.png)
 
-## License
+# License
 
 This project is free to use and does not contain any licensing restrictions.
 
-## Contact
+# Contact
 
 **Developer**: Vigneswari S.  
 [LinkedIn](https://linkedin.com/in/vigneswari-s-090046330/)
