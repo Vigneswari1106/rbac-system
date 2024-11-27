@@ -60,7 +60,7 @@ http://localhost:3000
 ```
 
 # Screenshots
-## Dashboard
+### Dashboard
 ![alt text](image.png)
 
 ## Manage Users
