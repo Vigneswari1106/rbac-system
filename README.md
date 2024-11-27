@@ -1,83 +1,66 @@
-📜 Description
-This project is a Role-Based Access Control (RBAC) System built with Node.js, Express, and MongoDB. It allows the management of users, roles, and permissions dynamically, enabling secure and structured access control for different user types, such as Admins, Moderators, and Regular Users.
+# Role Based Access Control (...still in dev mode...)
 
-🛠️ Features
-User Management
-Manage user accounts, including creating, editing, and deleting user profiles.
-Role Management
-Define and assign roles (e.g., Admin, Moderator, User) with specific permissions.
-Dynamic Permissions
-Grant or restrict Read, Write, and Delete operations based on assigned roles.
-Authentication
-User authentication with email and password using Passport.js.
-📋 Technologies Used
-Backend: Node.js, Express.js
-Database: MongoDB (Mongoose)
-Authentication: Passport.js
-Frontend: HTML, CSS, JavaScript
-Tools:
-Nodemon for development
-bcrypt for password hashing
-🚀 Getting Started
-Prerequisites
-Node.js installed
-MongoDB instance running locally or on the cloud
-Installation
-Clone this repository:
+This is a Role Based Access Control application using Nodejs, Express, Passport Js, etc.
+You can use this application as the starting point for whatever project you are going to build which needs authentication and authorization.
 
-git clone https://github.com/yourusername/rbac-system.git
-cd rbac-system
-Install dependencies:
+For authentication we have only Email & Password option but other authentication options using OAuth/OAuth2.0 like Google, Facebook, Apple, GitHub, etc, can be easily incorporated.
 
+The application is based on the **MVC pattern** i.e. Model View Controller.
+
+**Mongoose** is used as an ORM for MongoDB for storing Users in Database.
+
+**Passport JS** is used for local(email, password) authentication.
+
+The application is _almost_ **production ready**.
+
+---
+
+## To start setting up the project
+
+Step 1: Clone the repo
+
+```bash
+git clone https://github.com/trulymittal/role-based-access-control
+```
+
+Step 2: cd into the cloned repo and run:
+
+```bash
 npm install
-Create a .env file in the root directory with the following keys:
+```
 
+Step 3: Put your credentials in the .env file.
+
+```bash
 PORT=3000
-MONGO_URI=mongodb://localhost:27017/your_db_name
-SECRET_KEY=your_secret_key
-Start the server:
+MONGODB_URI=YOUR_MONGODB_URI(example: mongodb://localhost:27017)
+DB_NAME=YOUR_DB_NAME
+```
 
+Step 4: Install MongoDB (Linux Ubuntu)
+
+See <https://docs.mongodb.com/manual/installation/> for more infos
+
+Step 5: Run Mongo daemon
+
+```bash
+sudo service mongod start
+```
+
+Step 6: Start the app by
+
+```bash
 npm start
-Open your browser and navigate to:
+```
 
-http://localhost:3000
-📂 Project Structure
-rbac-system/
-│
-├── models/
-│   ├── User.js          # User schema
-│   ├── Role.js          # Role schema
-│   └── Permission.js    # Permission schema
-│
-├── routes/
-│   ├── auth.js          # Authentication routes
-│   ├── users.js         # User management routes
-│   ├── roles.js         # Role management routes
-│
-├── views/
-│   ├── layouts/         # Layout files
-│   ├── partials/        # Partial components
-│   └── pages/           # Main UI pages
-│
-├── public/              # Static assets (CSS, JS, images)
-├── app.js               # Main server file
-├── .env.example         # Example environment variables
-├── README.md            # Project documentation
-└── package.json         # Project metadata and dependencies
+## Author
 
-📷 Screenshots
-Dashboard
-![alt text](image.png)
+- [**Truly Mittal**](https://trulymittal.com)
 
-Manage User
-![alt text](image-1.png)
+## Contribute
 
-Profile
-![alt text](image-2.png)
+You can fork this repo and send me a PR.
 
-📝 License
-This project is free to use and does not contain any licensing restrictions.
+## License
 
-📧 Contact
-Developer: Vigneswari S
-LinkedIn: linkedin.com/in/vigneswari-s-090046330/
+This project is licensed under the MIT License.
