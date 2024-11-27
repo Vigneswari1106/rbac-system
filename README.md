@@ -63,11 +63,17 @@ http://localhost:3000
 ### Dashboard
 ![alt text](image.png)
 
-## Manage Users
+<br>
+
+### Manage Users
 ![alt text](image-1.png)
 
-# Profile
+<br>
+
+### Profile
 ![alt text](image-2.png)
+
+<br>
 
 # License
 
