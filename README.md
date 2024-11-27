@@ -1,7 +1,8 @@
-# Role Based Access Control (...still in dev mode...)
+# Role Based Access Control 
 
-This is a Role Based Access Control application using Nodejs, Express, Passport Js, etc.
-You can use this application as the starting point for whatever project you are going to build which needs authentication and authorization.
+# Description 
+
+This project is a Role-Based Access Control (RBAC) System built with Node.js, Express, and MongoDB. It allows the management of users, roles, and permissions dynamically, enabling secure and structured access control for different user types, such as Admins, Moderators, and Regular Users.
 
 For authentication we have only Email & Password option but other authentication options using OAuth/OAuth2.0 like Google, Facebook, Apple, GitHub, etc, can be easily incorporated.
 
@@ -11,7 +12,7 @@ The application is based on the **MVC pattern** i.e. Model View Controller.
 
 **Passport JS** is used for local(email, password) authentication.
 
-The application is _almost_ **production ready**.
+
 
 ---
 
