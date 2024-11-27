@@ -1,0 +1,288 @@
+<%- include('./layouts/header') %>
+
+
+<!-- Main Content -->
+<div class="container">
+  <h1 class="title text-center">Role-Based Access Control (RBAC) System</h1>
+  
+  <div class="description">
+    <h3>Welcome to the RBAC Application built with Node.js, Express, and MongoDB!</h3> <br>
+    <p style="font-size: 25px;">This application helps manage users, roles, and permissions with dynamic access control based on roles like Admin, Moderator, and User.</p>
+    <br>
+    <h4 style="font-size: 1.8em;">Key Features:</h4> <br>
+    <ul>
+      <li><b>User Management:</b> Manage user accounts and their status.</li>
+      <li><b>Role Management:</b> Define and assign roles with permissions.</li>
+      <li><b>Permissions:</b> Assign Read, Write, Delete permissions to roles.</li>
+    </ul>
+    <br>
+    <p style="font-size: 1.8em; color: #3c4b76;";>This App uses:</p> <br>
+    <ul>
+      <li><b>Node.js</b> & <b>Express</b> for routing.</li>
+      <li><b>Passport.js</b> for email/password authentication.</li>
+      <li><b>Mongoose</b> for MongoDB data storage.</li>
+    </ul>
+  </div>
+
+  
+  <div class="features">
+    <h3>Core Features:</h3> <br>
+    <ol>
+      <li><b>User Management:</b> Admins can create, edit, and delete users.</li>
+      <li><b>Role Management:</b> Define roles (Admin, Moderator, User) with permissions.</li>
+      <li><b>Access Control:</b> Modify user access based on assigned roles.</li>
+    </ol>
+  </div>
+
+  
+</div>
+
+<footer>
+  <p>Created by <strong>Vigneswari S</strong> | Role-Based Access Control (RBAC) System</p>
+  <p>Feel free to<a href="https://www.linkedin.com/in/vigneswari-s-090046330/">connect with me on LinkedIn</a>for more details on this project or my professional background.</p>
+
+</footer>
+
+
+
+<%- include('./layouts/footer') %>
+
+
+<style>
+  body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;  
+  margin: 0 auto;
+  padding: 40px 0;
+  
+}
+
+.title {
+  font-size: 3em;
+  color: #2a3d66;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.description,
+.features,
+.authentication {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.description h3,
+.features h3,
+.authentication h4 {
+  color: #3c4b76;
+  font-size: 1.8em;
+}
+
+.description ul,
+.features ol,
+.authentication ul {
+  margin-left: 20px;
+  
+}
+
+.description ul li,
+.features ol li,
+.authentication ul li {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+.description ul li b,
+.features ol li b,
+.authentication ul li b {
+  color: #4285f4;
+  font-weight: bold;
+}
+
+.features ol li:hover,
+.authentication ul li:hover {
+  background-color: #f1f7fd;
+  cursor: pointer;
+}
+
+.features {
+  border-left: 6px solid #ff9800;
+  background-color: #fef8e4;
+}
+
+.authentication {
+  border-left: 6px solid #4caf50;
+  background-color: #f1f8e9;
+}
+
+h3, h4 {
+  color: #3c4b76;
+}
+
+.features:hover,
+.authentication:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2a3d66;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+  margin-top: 40px;
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+
+footer a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+form.lg-form {
+  margin: 16px;
+  padding: 32px;
+  border: 4px solid #d1d5db;
+  min-width: 400px;
+  border-radius: 16px;
+}
+
+.lg-form label,
+.lg-form input {
+  display: block;
+  min-width: 100%;
+  margin: 8px 0px;
+}
+
+.lg-form label {
+  font-weight: bold;
+}
+
+.lg-form input {
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 1rem;
+  background-color: #f3f4f6;
+}
+
+.lg-form input[type='submit'] {
+  margin: 16px 0;
+  background-color: #db2777;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+input:focus {
+  outline: none;
+  background-color: #fff;
+  border: 2px solid #f3f4f6;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+
+  .description, .features, .authentication {
+    padding: 16px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  form.lg-form {
+    padding: 20px;
+  }
+  
+  .description ul li, .features ol li, .authentication ul li {
+    font-size: 1em;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .description, .features, .authentication {
+    padding: 12px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  form.lg-form {
+    padding: 15px;
+  }
+  
+  .description ul li, .features ol li, .authentication ul li {
+    font-size: 0.9em;
+  }
+
+  footer p {
+    font-size: 0.8em;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 80%;
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 3.5em;
+  }
+
+  .description, .features, .authentication {
+    padding: 24px;
+  }
+
+  footer {
+    padding: 30px;
+  }
+}
+</style>
