@@ -82,7 +82,9 @@ This project is free to use and does not contain any licensing restrictions.
 If you have any questions or would like to get in touch, feel free to reach out:
 
 **Developer**: Vigneswari S.  
+
 Email: [vigneswari2024@gmail.com](mailto:vigneswari2024@gmail.com)  
+
 LinkedIn: [https://linkedin.com/in/vigneswari-s-090046330/](https://linkedin.com/in/vigneswari-s-090046330/)
 
 ---
