@@ -68,8 +68,6 @@ http://localhost:3000
 ### Manage Users
 ![alt text](image-1.png)
 
-
-
 ### Profile
 ![alt text](image-2.png)
 
