@@ -67,5 +67,6 @@ This project is free to use and does not contain any licensing restrictions.
 
 ## Contact
 
-Developer: Vigneswari S
-LinkedIn: linkedin.com/in/vigneswari-s-090046330/
+**Developer**: Vigneswari S.  
+[LinkedIn](https://linkedin.com/in/vigneswari-s-090046330/)
+
