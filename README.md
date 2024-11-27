@@ -1,18 +1,26 @@
-# Role Based Access Control 
+# Role-Based Access Control (RBAC) System
 
-# Description 
+## Description
 
-This project is a Role-Based Access Control (RBAC) System built with Node.js, Express, and MongoDB. It allows the management of users, roles, and permissions dynamically, enabling secure and structured access control for different user types, such as Admins, Moderators, and Client.
+This project is a Role-Based Access Control (RBAC) System built with **Node.js**, **Express**, and **MongoDB**. It allows the management of users, roles, and permissions dynamically, enabling secure and structured access control for different user types, such as Admins, Moderators, and Clients.
 
-For authentication we have only Email & Password option but other authentication options using OAuth/OAuth2.0 like Google, Facebook, Apple, GitHub, etc, can be easily incorporated.
+For authentication, the system currently supports **Email & Password**. However, other authentication methods using OAuth/OAuth2.0 (such as Google, Facebook, Apple, GitHub, etc.) can be easily incorporated.
 
-The application is based on the **MVC pattern** i.e. Model View Controller.
+The application follows the **MVC (Model-View-Controller)** design pattern.
 
-**Mongoose** is used as an ORM for MongoDB for storing Users in Database.
+**Mongoose** is used as the Object Relational Mapping (ORM) tool for MongoDB, storing user data in the database.
 
-**Passport JS** is used for local(email, password) authentication.
+**Passport.js** is used for local authentication (email and password).
 
+---
 
+## Features
+
+- **User Management**: Easily manage and assign roles to users.
+- **Role-Based Access Control**: Enforce access based on roles (Admin, Moderator, Client).
+- **Authentication**: Supports email and password authentication.
+- **Easy to Extend**: Easily integrate OAuth authentication options like Google, Facebook, etc.
+- **Database**: Stores user and role data in MongoDB.
 
 ---
 
