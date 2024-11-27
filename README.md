@@ -77,7 +77,7 @@ http://localhost:3000
 
 This project is free to use and does not contain any licensing restrictions.
 
-## Contact
+# Contact
 
 If you have any questions or would like to get in touch, feel free to reach out:
 
